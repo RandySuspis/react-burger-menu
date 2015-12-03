@@ -10,8 +10,8 @@ let BurgerIcon = React.createClass({
       position: 'fixed',
       height: 6,
       width: 36,
-      left: 36,
-      top: 36 + 12 * index,
+      left: '90%',
+      top: 16 + 6 * index,
       zIndex: 1,
       opacity: this.state.hover ? 0.6 : 1
     });
@@ -29,7 +29,7 @@ let BurgerIcon = React.createClass({
     var buttonStyle = appendVendorPrefix({
       position: 'fixed',
       zIndex: 1,
-      margin: 24,
+      margin: 0,
       padding: 0,
       width: 60,
       height: 54,
@@ -38,7 +38,9 @@ let BurgerIcon = React.createClass({
       fontSize: 24,
       color: 'transparent',
       background: 'transparent',
-      outline: 'none'
+      outline: 'none',
+      left:'90%',
+      top:'16px'
     });
 
     return (
