@@ -118,7 +118,7 @@ var BurgerIcon = _react2['default'].createClass({
                 position: 'fixed',
                 height: 6,
                 width: 36,
-                left: '90%',
+                left: 36,
                 top: 16 + 6 * index,
                 zIndex: 1,
                 opacity: this.state.hover ? 0.6 : 1
@@ -144,7 +144,7 @@ var BurgerIcon = _react2['default'].createClass({
                     color: 'transparent',
                     background: 'transparent',
                     outline: 'none',
-                    left: '90%',
+                    left: 36,
                     top: '16px'
                 });
             return _react2['default'].createElement('div', null, _react2['default'].createElement('span', {

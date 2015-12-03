@@ -10,7 +10,7 @@ let BurgerIcon = React.createClass({
       position: 'fixed',
       height: 6,
       width: 36,
-      left: '90%',
+      left: 36,
       top: 16 + 6 * index,
       zIndex: 1,
       opacity: this.state.hover ? 0.6 : 1
@@ -39,7 +39,7 @@ let BurgerIcon = React.createClass({
       color: 'transparent',
       background: 'transparent',
       outline: 'none',
-      left:'90%',
+      left:36,
       top:'16px'
     });
 
