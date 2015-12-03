@@ -269,6 +269,7 @@ exports['default'] = function (styles) {
         },
         toggleMenu: function toggleMenu() {
             this.applyWrapperStyles();
+            console.warn('toggle menu');
             this.setState({ isOpen: !this.state.isOpen });
         },
         applyWrapperStyles: function applyWrapperStyles() {
@@ -375,7 +376,7 @@ exports['default'] = function (styles) {
                     preserveAspectRatio: 'none'
                 }, _react2['default'].createElement('path', { d: styles.svg.pathInitial })));
             }
-            return _react2['default'].createElement('div', null, _react2['default'].createElement('div', {
+            return _react2['default'].createElement('div', null, _react2['default'].createElement('button', {
                 id: 'bm-overlay',
                 ref: 'overlay',
                 onClick: this.toggleMenu,

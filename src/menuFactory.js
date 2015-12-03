@@ -25,7 +25,7 @@ export default (styles) => {
     toggleMenu() {
       // Order important: handle wrappers before setting sidebar state.
       this.applyWrapperStyles();
-
+      console.warn('toggle menu');
       this.setState({ isOpen: !this.state.isOpen });
     },
 
@@ -164,7 +164,7 @@ export default (styles) => {
 
       return (
         <div>
-          <div id="bm-overlay" ref="overlay" onClick={ this.toggleMenu } style={ styles.overlay(this.state.isOpen) }></div>
+          <button id="bm-overlay" ref="overlay" onClick={ this.toggleMenu } style={ styles.overlay(this.state.isOpen) }></button>
           <div id={ this.props.id } style={ styles.menuWrap(this.state.isOpen) }>
             { svg }
             <div className="bm-menu" style={ styles.menu(this.state.isOpen) } >
